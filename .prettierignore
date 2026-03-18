@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+.output/
+.vercel/
+.turbo/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Coverage
+coverage/
+*.lcov
+
+# Cache
+.cache/
+.vite/
+.eslintcache
+.stylelintcache
+
+# Generated files
+*.generated.*
+*.d.ts
+
+# Documentation
+docs/dist/
+docs/.vitepress/dist/
+
+# Public assets
+public/
+static/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database
+*.sqlite
+*.db
+
+# Backup files
+*.bak
+*.backup
+
+# Legacy files
+legacy-archive/
+
+# Test files
+test-results/
+playwright-report/
+coverage/
+
+# Sanity
+.sanity/
