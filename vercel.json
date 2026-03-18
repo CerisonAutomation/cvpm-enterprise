@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "cvpm-enterprise",
   "builds": [
     {
       "src": "package.json",
@@ -8,17 +7,9 @@
       "config": {
         "distDir": "dist"
       }
-    },
-    {
-      "src": "server/index.ts",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/server/index.ts"
-    },
     {
       "src": "/(.*)",
       "dest": "/dist/$1"
@@ -36,11 +27,6 @@
       "SUPABASE_ANON_KEY": "@supabase_anon_key",
       "UPSTASH_REDIS_REST_URL": "@upstash_redis_rest_url",
       "UPSTASH_REDIS_REST_TOKEN": "@upstash_redis_rest_token"
-    }
-  },
-  "functions": {
-    "server/index.ts": {
-      "maxDuration": 30
     }
   },
   "headers": [
